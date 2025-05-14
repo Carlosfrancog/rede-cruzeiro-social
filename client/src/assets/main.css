@@ -2,8 +2,9 @@
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 ;
+  padding: 0;
+  display: block;
   font-weight: normal;
 }
 
@@ -13,6 +14,14 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+}
+
+body {
+  background-image: url('@/assets/backgorund.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @media (hover: hover) {
@@ -30,6 +39,6 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 0rem;
   }
 }
