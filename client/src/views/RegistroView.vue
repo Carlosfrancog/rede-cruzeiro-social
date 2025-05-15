@@ -21,8 +21,34 @@ const nome = ref('')
 const email = ref('')
 const senha = ref('')
 
-function registrar() {
-  alert(`Registro: ${nome.value}, ${email.value}`)
+
+
+async function registrar() {
+  try {
+    const resposta = await fetch('http://localhost:3000/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nome:nome.value,
+        email:email.value,
+        senha:senha.value
+      })
+    });
+
+    console.log('Resposta:', resposta); // <- AJUDA A VER O QUE VEIO
+    const dados = await resposta.json();
+
+    if (!resposta.ok) {
+      alert(`Erro: ${dados.erro}`);
+      return;
+    }
+
+    alert('Registro feito com sucesso!');
+    // Aqui você pode redirecionar para o login ou home
+  } catch (erro) {
+    console.error(erro);
+    alert('Erro na conexão com o servidor');
+  }
 }
 </script>
 

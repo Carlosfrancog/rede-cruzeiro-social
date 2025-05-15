@@ -1,9 +1,26 @@
 [
   {
-    "id": 1,
-    "autorId": 1,
-    "conteudo": "Primeira postagem!",
-    "curtidas": 3,
-    "comentarios": []
+    "id": 1747332734992,
+    "autor": "Test",
+    "conteudo": "Post test",
+    "data": "2025-05-15T18:12:14.992Z"
+  },
+  {
+    "id": 1747334510975,
+    "autor": "teste",
+    "conteudo": "1",
+    "data": "2025-05-15T18:41:50.975Z"
+  },
+  {
+    "id": 1747334515593,
+    "autor": "teste",
+    "conteudo": "2",
+    "data": "2025-05-15T18:41:55.593Z"
+  },
+  {
+    "id": 1747334519807,
+    "autor": "teste",
+    "conteudo": "3",
+    "data": "2025-05-15T18:41:59.807Z"
   }
 ]
